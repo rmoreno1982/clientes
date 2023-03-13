@@ -29,8 +29,8 @@
       <nav class="navbar navbar-expand-lg navbar-light bg-clientes header-page">
         <div class="container-fluid">
           <div class="d-flex justify-content-center">
-            <div class="logo-clientes"> <img src="images/logo-V.png" class="logo-icon"> <span>SGS Viollier</span>
-              <strong>Clientes</strong>
+            <div class="logo-clientes"> <img src="images/logo-V.png" class="logo-icon"> <span>Mis Casos</span>
+              <strong>VYAA</strong>
             </div>
           </div>
 
@@ -60,7 +60,17 @@
 
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">Siniestros con documentación pendientes</h5>
+            <div class="d-flex">
+              <div class="">
+                <h5 class="card-title">Siniestros con documentación pendientes</h5>
+              </div>
+              <div class="ms-auto"> <span class="badge color-r p-2 rounded-pill">Documentación pendiente</span> <a
+                  href="#" data-bs-toggle="tooltip" data-bs-title="Tienes documentos pendientes, favor de enviarlos"><i
+                    class="far fa-question-circle"></i></a></div>
+              <div class="ms-4"> <span class="badge color-n p-2 rounded-pill">Validación de documentos</span> <a
+                  href="#" data-bs-toggle="tooltip" data-bs-title="Se estan validando los documentos que enviaste"><i
+                    class="far fa-question-circle"></i></a></div>
+            </div>
             <hr>
             <div class="table-responsive">
 
@@ -68,12 +78,11 @@
               <table class="table table-hover table-documentos">
                 <thead class="table-light">
                   <tr>
-                    <th scope="col">Siniestro</th>
-                    <th scope="col">Compañía</th>
-                    <th scope="col">Area</th>
-                    <th scope="col">Estado <a href="#" data-bs-toggle="tooltip"
-                        data-bs-title="Estado de tu caso, si tienes documentos pendientes debes enviarlos"><i
-                          class="far fa-question-circle"></i></a></th>
+                    <th scope="col">N° Referencia</th>
+                    <th scope="col">N° Siniestro</th>
+                    <th scope="col">Ramo</th>
+                    <th scope="col">Analista</th>
+
                     <th scope="col">Acciones <a href="#" data-bs-toggle="tooltip"
                         data-bs-title="Puedes subir documentación y enviarnos tus comentarios"><i
                           class="far fa-question-circle"></i></a>
@@ -83,16 +92,16 @@
                 <tbody>
                   <tr class="align-middle">
                     <td data-label="Nombre del Siniestro">1234567</td>
-                    <td data-label="Compañia">Zurich</td>
-                    <td data-label="Area">Robo</td>
-                    <td data-label="Estado"><span class="badge color-r">Documentacion pendiente</span></td>
+                    <td data-label="Compañia">1234567</td>
+                    <td data-label="Ramo">Robo</td>
+                    <td data-label="Analista">Juan Perez C.
+                    </td>
+
                     <td data-label="Acciones">
                       <button type="button" class="btn btn-icon btn-sm color-a rounded-pill" data-bs-toggle="modal"
                         data-bs-target="#exampleModal"><i class="fas fa-upload"></i>
                       </button>
-                      <button type="button" class="btn btn-icon btn-sm color-d rounded-pill" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal2"><i class="fas fa-comment-dots"></i>
-                      </button>
+
                     </td>
                   </tr>
 
@@ -116,29 +125,24 @@
               <table class="table table-hover table-documentos">
                 <thead class="table-light">
                   <tr>
-                    <th scope="col">Siniestro</th>
-                    <th scope="col">Compañía</th>
-                    <th scope="col">Area</th>
-                    <th scope="col">Fecha de Asignación VB</th>
+                    <th scope="col">N° Referencia</th>
+                    <th scope="col">N° Siniestro</th>
+                    <th scope="col">Ramo</th>
+                    <th scope="col">Analista</th>
+                    <th scope="col">Fecha de validación de documentos</th>
                     <th scope="col">Estado</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr class="align-middle">
-                    <td data-label="Nombre del Siniestro">1234567</td>
-                    <td data-label="Compañia">Zurich</td>
-                    <td data-label="Area">Robo</td>
-                    <td data-label="Fecha de Asignación VB">01-02-2020</td>
-                    <td data-label="Estado"><span class="badge color-e">Validacion de Pago</span></td>
+                    <td data-label="N° Referencia">1234567</td>
+                    <td data-label="N° Siniestro">1234567</td>
+                    <td data-label="Ramo">Robo</td>
+                    <td data-label="Analista">Juan Perez C.</td>
+                    <td data-label="Fecha de validación de documentos">01-02-2020</td>
+                    <td data-label="Estado"><span class="badge color-e">Proceso de analisis</span></td>
                   </tr>
-                  <tr class="align-middle">
-                    <td data-label="Nombre del Siniestro">1234567</td>
-                    <td data-label="Compañia">CHUBB</td>
-                    <td data-label="Area">Ramos Varios</td>
-                    <td data-label="Fecha de Asignación VB">01-02-2020</td>
-                    <td data-label="Estado"><span class="badge color-f">Proceso de analisis</span></td>
 
-                  </tr>
                 </tbody>
               </table>
             </div>
@@ -162,8 +166,11 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-
-
+            <div class="alert alert-warning" role="alert">
+              <h4 class="alert-heading">Importante</h4>
+              Sube y envía la documentación de tu caso, puedes guardar y continuar cuando lo desees, en el momento que
+              tengas todos los antecedentes cargados o enviados podrás terminar el proceso.
+            </div>
 
             <div class="row">
               <div class="col-12 col-sm-6">
@@ -202,12 +209,17 @@
                 </div>
               </div>
             </div>
-
+            <hr>
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                style="height: 100px"></textarea>
+              <label for="floatingTextarea2">Escríbenos si tienes dudas con algún antecedente…</label>
+            </div>
 
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-info" data-bs-dismiss="modal">Cerrar y Guardar</button>
-            <button type="button" class="btn btn-success">Enviar</button>
+            <button type="button" class="btn btn-info" data-bs-dismiss="modal">Guardar y Enviar</button>
+            <button type="button" class="btn btn-success disabled">Terminar Proceso</button>
           </div>
         </div>
       </div>
@@ -226,7 +238,7 @@
             <div class="form-floating">
               <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
                 style="height: 100px"></textarea>
-              <label for="floatingTextarea2">Si tienes alguna duda, cuentanos</label>
+              <label for="floatingTextarea2">Escríbenos si tienes dudas con algún antecedente…s</label>
             </div>
 
 
