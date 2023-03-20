@@ -59,7 +59,7 @@ span {
 .color-r{color: #ffeeed;background-color: #df230e;font-weight: 500!important;}
 .color-n{color: #fff;background-color: #ff8c00;font-weight: 500!important;}
 
-.fondo-login{background: #eeeeee;}
+.fondo-login{background: #eeeeee; }
 .border-verde{border-color: #1ABB9C!important;}
 .boton-ingresar{background:#1ABB9C ;}
 .circulo-logo{margin: 0 auto 20px auto; text-align: center; }
@@ -128,7 +128,10 @@ span {
 .editor-doc .exportar svg{font-size:2.5rem;color:#11caf0;}
 
 
-
+@media screen and (max-width: 600px) {
+  
+  .fondo-login{background: #eeeeee; height: 100%;}
+}
 @media screen and (max-width: 992px) {
   .table-documentos {
     border: 0;
