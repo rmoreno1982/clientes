@@ -130,7 +130,7 @@ span {
 
 @media screen and (max-width: 600px) {
   
-  .fondo-login{background: #eeeeee; height: 100%;}
+  .fondo-login{background: #eeeeee; height: 100%!important;}
 }
 @media screen and (max-width: 992px) {
   .table-documentos {
