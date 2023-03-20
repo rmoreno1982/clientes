@@ -130,10 +130,10 @@ span {
 
 @media screen and (max-width: 740px) {
   
-  .fondo-login{background: #eeeeee; height: 100%!important;}
+  .fondo-login{background: #eeeeee; height: 100%!important;padding:2em 0;}
 }
 @media screen and (max-width: 992px) {
-.fondo-login{background: #eeeeee; height: 100%!important;
+.fondo-login{background: #eeeeee; height: 100%!important;padding:2em 0;
   .table-documentos {
     border: 0;
   }
