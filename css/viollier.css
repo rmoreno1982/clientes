@@ -133,6 +133,7 @@ span {
   .fondo-login{background: #eeeeee; height: 100%!important;}
 }
 @media screen and (max-width: 992px) {
+.fondo-login{background: #eeeeee; height: 100%!important;
   .table-documentos {
     border: 0;
   }
